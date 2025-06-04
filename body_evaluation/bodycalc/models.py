@@ -90,7 +90,7 @@ class BodyComposition(models.Model):
             self.diameter_thigh,
             self.diameter_calf
         ]
-        d_squared = sum(d ** 2 for d in diameters) / len(diameters)
+        d_squared = (sum(diameters) / len(diameters)) ** 2
         O_absol = (self.height * d_squared * 1.2) / 1000
         return {
             'absolute': round(O_absol, 2),
