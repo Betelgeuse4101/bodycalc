@@ -67,10 +67,10 @@ class BodyCompositionForm(forms.ModelForm):
             'circumference_thigh': "Измеряется непосредственно под ягодичной складкой",
             'circumference_calf': "Измеряется в наиболее широком месте голени",
 
-            'diameter_arm': "Измеряется штангенциркулем на уровне середины плеча",
-            'diameter_forearm': "Измеряется в наиболее широком месте предплечья",
-            'diameter_thigh': "Измеряется на уровне подъягодичной складки",
-            'diameter_calf': "Измеряется в наиболее широком месте голени",
+            'diameter_arm': "Измеряется чуть выше локтевого сустава",
+            'diameter_forearm': "Измеряется в запястье",
+            'diameter_thigh': "Измеряется ширина коленки",
+            'diameter_calf': "Измеряется в лодыжке",
         }
 
     def __init__(self, *args, **kwargs):
